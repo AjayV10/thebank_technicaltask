@@ -23,8 +23,8 @@ Be sure you have the following installed on your development machine:
 
 ## Requirements
 
-+ Django==3.2
-+ python-dateutil==2.8.1
++ Django==4.0.1
++ python-dateutil==2.8.2
 
 ## Install Redis Server
 
