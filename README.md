@@ -5,7 +5,8 @@ This is an Online Banking Concept created using Django Web Framework.
 
 ## Features
 
-* Create Bank Account.
+* Create Bank Account
+* Account Signin and Singout
 * Deposit & Withdraw Money
 * Bank Account Type Support (e.g. Current Account, Savings Account)
 * Interest calculation depending on the Bank Account type
