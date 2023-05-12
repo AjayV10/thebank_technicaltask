@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+{% extends 'apps/index.html' %}
+{% block body_block %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/stylesheets.css' %}">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Customer Account Details</title>
+</head>
+<body>
+	<center>
+	<h1>Customer Account Details</h1><br>
+	{% if b %}
+	<table>
+		<thead>
+			<th>ACC NO</th>
+			<th>Name</th>
+			<th>Mobile</th>
+			<th>City</th>
+			<th>Deposit</th>
+			<th>Balance</th>
+			<th>Update</th>
+			<th>Delete</th>
+		</thead>
+		{% for i in b %}
+		<tr>
+			<td>{{i.account_no}}</td>
+			<td>{{i.name}}</td>
+			<td>{{i.mobile}}</td>
+			<td>{{i.city}}</td>
+			<td>{{i.deposit_amt}}</td>
+			<td>{{i.balance_amt}}</td>
+			<td><a href="/update/{{i.id}}">CLICK</a></td>
+			<td><a href="/delete/{{i.id}}">CLICK</a></td>
+		</tr>
+		{% endfor %}
+	</table>
+	<a href="/store">DOWNLOAD</a>
+	{% else %}
+	<h3>NO RECORDS FOUND</h3>
+	{% endif %}
+    </center>
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+{% extends 'apps/index.html' %}
+{% block body_block %}
+{% load static %}
+<style>
+	img {
+		border:solid 5px;
+	    width: 10%;
+	    height: 10%;
+	}
+</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>loan PAGE</title>
+</head>
+<body>
+<h1 style="text-align:center;">Loans Provided by our bank</h1>
+<h3 style="text-align:center;">You will be first</h3><br>
+<center>
+<img src="{% static 'images/home_loan_logo.png' %}">
+<img src="{% static 'images/gold_loan_logo.png' %}"><br><br>
+<img src="{% static 'images/property_loan_logo.png' %}">
+<img src="{% static 'images/insurance_loan_logo.png' %}">
+</center>
+</body>
+{% endblock %}
+</html>

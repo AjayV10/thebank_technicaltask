@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+{% extends 'apps/index.html' %}
+{% block body_block %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/stylesheets.css' %}">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SIGNUP PAGE</title>
+</head>
+<body>
+	<center>
+		<h1>Create Account</h1>
+	<form method="POST">
+		{{form.as_p}}
+		{% csrf_token %}
+		<button type="submit">SIGN UP</button>
+	</form>
+</center>
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+{% extends 'apps/index.html' %}
+{% block body_block %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/stylesheets.css' %}">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>INDEX PAGE</title>
+</head>
+<body>
+	<center>
+		<br><br><br>
+	<h1>THE BANK</h1>
+	<img src="{% static '/images/bank_logo.png' %}"><br><br>
+	<h3>All your banking needs in one app</h3>
+</center>
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'apps/index.html' %}
+{% block body_block %}
+<html>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/stylesheets.css' %}">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOME PAGE</title>
+</head>
+<body>
+	<main>
+	<h2 style="font-size: xx-large;font-family: arial;text-align: center;">The Bank</h2>
+	<p style="font-size: x-large;text-align: justify;">The Bank was formed in 1955 at the initiative of the World Bank, the Government of India and representatives of Indian industry. The principal objective was to create a development financial institution for providing medium-term and long-term project financing to Indian businesses. Until the late 1980s, Our bank primarily focused its activities on project finance, providing long-term funds to a variety of industrial projects. With the liberalization of the financial sector in India in the 1990s, Our bank transformed its business from a development financial institution offering only project finance to a diversified financial services provider that, along with its subsidiaries and other group companies, offered a wide variety of products and services.
+	</p>
+	<article>
+		<h2 style="font-size: xx-large;font-family:arial;text-align:center;">The Bank's Vision</h2>
+		<p style="font-size: x-large;text-align: justify;">
+			For over six decades, our Group has contributed significantly towards India’s economic growth and development. Promoting inclusive growth has been a key priority for the Group. We have not only made meaningful differences in the lives of our customers through our suite of products and services but have also been consistently supporting development initiatives and community outreach efforts.
+		</p>
+	</article>
+</main>	
+</body>
+{% endblock %}
+</html>

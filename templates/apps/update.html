@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+{% extends 'apps/index.html' %}
+{% block body_block %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/stylesheets.css' %}">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UPDATE PAGE</title>
+</head>
+<body>
+	<center>
+	<h1>Update the customer's Information</h1>
+	<form method="POST">
+		{% csrf_token %}
+		Account Number: <input type="text" name="account_no" value="{{b.account_no}}"><br><br>
+		Account Name: <input type="text" name="name" value="{{b.name}}"><br><br>
+		Mobile: <input type="text" name="mobile" value="{{b.mobile}}"><br><br>
+		City: <input type="text" name="city" value="{{b.city}}"><br><br>
+		Deposit Amount: <input type="text" name="deposit_amt" value="{{b.deposit_amt}}"><br><br>
+		Balance Amount: <input type="text" name="balance_amt" value="{{b.balance_amt}}"><br><br>
+		<button type="submit">SUBMIT</button>
+	</form>
+</center>
+</body>
+{% endblock %}
+</html>
