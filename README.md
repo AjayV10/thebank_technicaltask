@@ -35,7 +35,7 @@ redis-server
 ```
 
 ## Project Installation
-
+```
 cd bank
 ```
 Migrate Database,
@@ -53,3 +53,8 @@ Create Superuser,
 python manage.py createsuperuser
 ```
 
+Admin Username,
+```bash
+Username: admin
+Password: 12345
+```
